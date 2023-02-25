@@ -64,7 +64,8 @@ LINUXINCLUDE    += \
 endif
 ifeq ($(CONFIG_RHODE_DTB), y)
 LINUXINCLUDE    += \
-                -include $(srctree)/techpack/audio/config/bengalrhode.h
+                -include $(srctree)/techpack/audio/config/bengalrhode.h \
+                -include $(srctree)/techpack/audio/config/rhodeauto.h
 endif
 
 obj-y += soc/
